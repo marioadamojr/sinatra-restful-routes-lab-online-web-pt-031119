@@ -13,4 +13,8 @@
   <input type="submit" value="Submit">
 </form>
 
+<form method="post" action="/recipes/<%= @recipe.id %>/delete">
+  <input id="hidden" type="hidden" name="_method" value="delete">
+  <input type="submit" value="delete">
+</form>
 
